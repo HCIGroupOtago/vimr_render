@@ -16,11 +16,8 @@
 			"Enabled": true
 		},
 		{
-			"Name": "OnlineSubsystemGooglePlay",
-			"Enabled": false,
-			"SupportedTargetPlatforms": [
-				"Android"
-			]
+			"Name": "OnlineSubsystem",
+			"Enabled": false
 		},
 		{
 			"Name": "OnlineSubsystemIOS",
@@ -29,22 +26,9 @@
 				"IOS",
 				"TVOS"
 			]
-		},
-		{
-			"Name": "OnlineSubsystemNull",
-			"Enabled": false
-		},
-		{
-			"Name": "OnlineSubsystemUtils",
-			"Enabled": false
-		},
-		{
-			"Name": "OnlineSubsystem",
-			"Enabled": false
 		}
 	],
 	"TargetPlatforms": [
-		"PS4",
 		"WindowsNoEditor"
 	],
 	"PostBuildSteps":
