@@ -1,7 +1,6 @@
 // Copyright 1998-2017 Epic Games, Inc. All Rights Reserved.
 
 using UnrealBuildTool;
-using System.IO;
 
 public class Voxels : ModuleRules
 {
@@ -11,11 +10,6 @@ public class Voxels : ModuleRules
 		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
 		string VIMR_ROOT = System.Environment.GetEnvironmentVariable("VIMR_ROOT_DEV");
 
-		PublicIncludePaths.Add(Path.Combine(ModuleDirectory, "Voxels/Public"));
-		PublicIncludePaths.Add(Path.Combine(ModuleDirectory, "Voxels/Private"));
-		PublicIncludePaths.Add(Path.Combine(ModuleDirectory, VIMR_ROOT + "/include/"));
-
-		/*
 		PublicIncludePaths.AddRange(
 			new string[] {
 				"Voxels/Public"
@@ -30,8 +24,8 @@ public class Voxels : ModuleRules
             }     
 			);
 
-		*/
-		PublicAdditionalLibraries.AddRange(
+		
+        PublicAdditionalLibraries.AddRange(
             new string[]
             {
                 VIMR_ROOT + "/lib/vimr_network.lib",
